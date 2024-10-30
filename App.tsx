@@ -1,5 +1,5 @@
 import Groups from '@screens/Groups';
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/theme'
 import {useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/roboto'
@@ -19,7 +19,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      { fontsLoaded ? <NewGroup/>: <Loading/> }
+      { fontsLoaded ? <Players/>: <Loading/> }
     </ThemeProvider>
    
   );
