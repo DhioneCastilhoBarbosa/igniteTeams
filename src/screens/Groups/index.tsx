@@ -8,8 +8,10 @@ import { ListEmpyt } from "@components/ListEmpyt";
 import { Button } from "@components/Button";
 
 
+
 export default function Groups(){
   const [groups, setGroups] = useState<string[]>([]);
+  
 
   return(
     <Container>
