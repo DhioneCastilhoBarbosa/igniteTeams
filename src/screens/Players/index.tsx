@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRoute } from "@react-navigation/native";
 import { Container, Form, HeaderList, NumbersOfPlayers } from "./styled";
 import { Header } from "@components/Header";
 import { Highlight } from "@components/Highlight";
@@ -11,15 +12,23 @@ import { ListEmpyt } from "@components/ListEmpyt";
 import { Button } from "@components/Button";
 
 
+type RouteParams = {
+  group: string;
+}
+
 export function Players(){
   const [team, setTeam] = useState('Time A')
-  const [player, setPlayer] = useState(['Dhione', 'Ana Luisa', 'Keko', 'Felipe', 'Sete Facada', 'Peito de Pombo', 'Morte Lenta', 'Já Morreu', 'Sem dó'])
+  const [player, setPlayer] = useState([])
+
+  const route = useRoute()
+  const {group} = route.params as RouteParams
+
 
   return(
     <Container>
       <Header showBackButton/>
       <Highlight
-        title="Nome da turma"
+        title={group}
         subtitle="adicione a galera e separe os times"
       />
       <Form>
