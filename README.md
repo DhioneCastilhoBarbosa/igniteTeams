@@ -1,3 +1,4 @@
+<div style="background-color: black; color: white; padding: 20px;">
 <h1 align="center">Welcome to IgniteTeam 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -7,9 +8,11 @@
 
 **IgniteTeam** is an application designed to help organize groups and teams for game matches. With this app, you can create groups, divide participants into teams, and manage team members easily and efficiently.
 <div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+<p align="center">
  <img width="200"  src="./src/assets/screen3.jpeg"/>
   <img width="200"  src="./src/assets/screen1.jpeg"/>
   <img width="200"  src="./src/assets/screen2.jpeg"/>
+</p>
 </div>  
 
 ## Features  
@@ -50,3 +53,4 @@ npx expor start
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+</div>
